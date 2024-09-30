@@ -1,0 +1,304 @@
+import React from "react";
+import domoLogo from "../pictures/Domo-Logo.png";
+
+const HomePage = () => {
+  return (
+    <div className="home-page">
+      <div className="sub-header">
+        Attend a connections tour near you | Explore Locations
+      </div>
+      <div className="hero-section">
+        <div className="hero-wording">
+          <div className="title">Put AI powered...</div>
+          <div className="text">Move from basic...</div>
+          <div className="buttons">
+            <button>try free</button>
+            <button>watch demo</button>
+          </div>
+        </div>
+        <div className="hero-picture">
+          <img src="" alt="" />
+        </div>
+      </div>
+      <div className="data-section">
+        <div className="data-card">
+          <div className="title">apps and automation</div>
+          <div className="text"></div>
+          <div className="link"></div>
+        </div>
+        <div className="data-card">
+          <div className="title">bi and analytics</div>
+          <div className="text"></div>
+          <div className="link"></div>
+        </div>
+        <div className="data-card">
+          <div className="title">data foundation</div>
+          <div className="text"></div>
+          <div className="link"></div>
+        </div>
+        <div className="data-card">
+          <div className="title">Domo.AI</div>
+          <div className="text"></div>
+          <div className="link"></div>
+        </div>
+      </div>
+      <div className="trusted-by">
+        <div className="title">trusted by</div>
+        <div className="logos">
+          <div className="logo"></div>
+          <div className="logo"></div>
+          <div className="logo"></div>
+          <div className="logo"></div>
+          <div className="logo"></div>
+          <div className="logo"></div>
+        </div>
+      </div>
+      <div className="xp-platform">
+        <div className="xp-section">
+          overview
+          <div className="overview">component</div>
+        </div>
+        <div className="xp-section">
+          App creation
+          <div className="app-creation">component</div>
+        </div>
+        <div className="xp-section">
+          BI and Analytics
+          <div className="bi-analytics">component</div>
+        </div>
+        <div className="xp-section">
+          Data Foundation
+          <div className="data-foundation">component</div>
+        </div>
+      </div>
+      <div className="client-testimonal-card">
+        <div className="text">
+          <div className="quote"> "domo allows us....</div>
+          <div className="client"></div>
+          <div className="client-credentials"></div>
+        </div>
+        <div className="client-picture">picture</div>
+      </div>
+      <div className="multipliers">
+        <div className="title">Create a Company of Multipliers</div>
+        <div className="text">Fresh data and provocative...</div>
+      </div>
+      <div className="empower">
+        <div className="wording">
+          <div>
+            <div className="title">Empower All your Teams</div>
+            <div className="text">Our unique user-centric...</div>
+          </div>
+          <div>
+            <div className="title">let data drive your business</div>
+            <div className="text">domo helps you foster...</div>
+            <div className="link">Explore DOMO for yourself</div>
+          </div>
+        </div>
+        <div className="picture"></div>
+      </div>
+      <div className="testimonials">
+        <div className="testimonial">
+          <div className="title">Unilever</div>
+          <div className="quote">We've seen the game-changing impact....</div>
+          <div className="head-shot">
+            <img src="" alt="head shot" />
+          </div>
+          <div className="name">Alessandro Ventura</div>
+          <div className="title">Chief Information Officaer, Unilever</div>
+        </div>
+        <div className="testimonial-selector">selector component</div>
+      </div>
+      <div className="roi">
+        <div className="title">ROI that turns into leads</div>
+        <div className="text">Analysts agree that ....</div>
+        <div className="text-reference">
+          According to
+          <h2>Forrester</h2>
+        </div>
+        <div className="roi-for">
+          <div className="roi-section">
+            <div className="title">ROI for small and medium businesses</div>
+            <div className="info-cards">
+              <div className="card">
+                <div className="title">345%</div>
+                <div className="text">ROI over 3 years</div>
+              </div>
+              <div className="card">
+                <div className="title">Over $1M</div>
+                <div className="text">In Increased Revenue</div>
+              </div>
+              <div className="card">
+                <div className="title"> {"<6 month"}</div>
+                <div className="text">Payback Period</div>
+              </div>
+            </div>
+            <div className="link">Read the Report</div>
+          </div>
+          <div className="roi-section">
+            <div className="title">ROI for apps</div>
+            <div className="info-cards">
+              <div className="card">
+                <div className="title">455%%</div>
+                <div className="text">ROI over 3 years</div>
+              </div>
+              <div className="card">
+                <div className="title">$16M</div>
+                <div className="text">Benefits Present Value</div>
+              </div>
+              <div className="card">
+                <div className="title">$13.2M</div>
+                <div className="text">net present value</div>
+              </div>
+            </div>
+            <div className="link">Read the Report</div>
+          </div>
+          <div className="reference">
+            Forrester Study: The Total Economic Impact™ of Domo For Small and
+            Medium Businesses, March 2021 The Total Economic Impact™ of Domo,
+            March 2022
+          </div>
+        </div>
+      </div>
+      <div className="recognized">
+        <div className="title"></div>
+        <div className="recognition-cards">
+          <div className="recognition-card"></div>
+          <div className="recognition-card"></div>
+          <div className="recognition-card"></div>
+          <div className="recognition-card"></div>
+        </div>
+      </div>
+      <div className="why-love-domo">
+        <div>
+          background image
+          <div className="title"></div>
+          <div className="picture"></div>
+        </div>
+        <div className="link">view all accolades</div>
+      </div>
+      <div className="explore">
+        <div className="explore-card">
+          background image
+          <div className="text">Go from data meh...</div>
+          <div className="link-container">
+            <div className="link">explore by industry</div>
+            <div className="link">explore by department</div>
+          </div>
+        </div>
+        <div className="explore-card">
+          background image
+          <div className="text">Connect, share, and learn...</div>
+          <div className="link-container">
+            <div className="link">join the community</div>
+          </div>
+        </div>
+      </div>
+      <div className="sub-footer">
+        <img src={domoLogo} alt="domo logo" />
+        <div className="links-container">
+          <div className="links-section">
+            <div className="title">Product</div>
+            <div className="links">
+              <div className="link">OverView</div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+            </div>
+          </div>
+          <div className="links-section">
+            <div className="title">Solutions</div>
+            <div className="links">
+              <div className="link">DOMO for enterprise</div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+            </div>
+          </div>
+          <div className="links-section">
+            <div className="title">Resources</div>
+            <div className="links">
+              <div className="link">Try Free</div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+            </div>
+          </div>
+          <div className="links-section">
+            <div className="title">DOMO Central</div>
+            <div className="links">
+              <div className="link">DOMO Central OverView</div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+            </div>
+          </div>
+          <div className="links-section">
+            <div className="title">Company</div>
+            <div className="links">
+              <div className="link">OverView</div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+              <div className="link"></div>
+            </div>
+          </div>
+        </div>
+        <div className="language-selector">
+          <input type="drop-down" defaultValue="English" />
+        </div>
+      </div>
+      <div className="footer">
+        <div className="social-links">
+          <div className="link">FB</div>
+          <div className="link">X</div>
+          <div className="link">LinkedIn</div>
+          <div className="link">IG</div>
+        </div>
+        <div>
+          <div className="copyright"></div>
+          <div className="copyright-links">
+            <div className="link">Domo Cookies</div>
+            <div className="link">Privacy Notice</div>
+            <div className="link">Data Privacy Framework</div>
+            <div className="link">Patents</div>
+            <div className="link">
+              CA do not sell or share my personal information
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default HomePage;
