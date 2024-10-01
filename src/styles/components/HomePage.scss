@@ -25,6 +25,7 @@
     justify-content: center;
     width: 95%;
     margin-top: 100px;
+    padding-left: 20px;
 
     .hero-wording {
       display: flex;
@@ -53,7 +54,7 @@
         display: flex;
         gap: 20px;
         padding-bottom: 30px;
-        padding-left: 20px;
+        // padding-left: 20px;
 
         .button {
           height: 40px;
@@ -65,7 +66,6 @@
         .try-free {
           width: 120px;
           background-color: $button-orange;
-          // border: solid 1px #ffa500;
           border: none;
 
           &:hover {
@@ -89,8 +89,6 @@
 
     .hero-picture {
       img {
-        // width: 325px;
-        // height: 250px;
         width: 500px;
         height: 375px;
       }
@@ -101,9 +99,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    // height: 200px;
-    // text-align: left;
-    margin: 30px 0;
+    margin: 20px 0;
     gap: 20px;
 
     .data-card {
@@ -111,13 +107,15 @@
       grid-template-rows: 1fr auto;
       justify-content: left;
       align-content: flex-start;
-      padding: 20px 20px 10px;
       width: 200px;
       height: 190px;
       background-color: white;
       border-bottom: solid 3px;
       border-bottom-color: $domo-blue;
       border-radius: 10px 10px 0 0;
+      padding: 20px 20px 10px;
+      margin-top: 10px;
+      transition: margin 0.3s ease;
       cursor: pointer;
 
       div {
@@ -146,8 +144,7 @@
       }
 
       &:hover {
-        margin-top: -5px;
-        transition: margin-top 0.3s ease;
+        margin-top: -0;
 
         .link {
           background-color: $faded-light-blue;
