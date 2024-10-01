@@ -1,56 +1,97 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import domoLogo from "../pictures/Domo-Logo.png";
+import heroPicture from "../pictures/product-feature-mulitply-your-impact-data-experiences-customers-2x.webp";
 
 const HomePage = () => {
   return (
     <div className="home-page">
       <div className="sub-header">
-        Attend a connections tour near you | Explore Locations
+        <Link>
+          Attend a Connections Tour Near You | Explore Locations {">"}
+        </Link>
       </div>
       <div className="hero-section">
         <div className="hero-wording">
-          <div className="title">Put AI powered...</div>
-          <div className="text">Move from basic...</div>
+          <div className="title">
+            Put AI-powered data to work and help everyone multiply their impact.
+          </div>
+          <div className="text">
+            Move from basic charts and graphs to data experiences that fuel
+            "Aha!" insights and action in the moments that matter.
+          </div>
           <div className="buttons">
-            <button>try free</button>
-            <button>watch demo</button>
+            <button className="button try-free">TRY FREE</button>
+            <button className="button watch-demo">WATCH DEMO</button>
           </div>
         </div>
         <div className="hero-picture">
-          <img src="" alt="" />
+          <img src={heroPicture} alt="hero" />
         </div>
       </div>
       <div className="data-section">
         <div className="data-card">
-          <div className="title">apps and automation</div>
-          <div className="text"></div>
-          <div className="link"></div>
+          <div>
+            <div className="title">Apps and Automation</div>
+            <div className="text">
+              Build role-specific solutions for your business that drive smarter
+              decisions and automate processes.
+            </div>
+          </div>
+          <div className="link">Discover Apps</div>
         </div>
         <div className="data-card">
-          <div className="title">bi and analytics</div>
-          <div className="text"></div>
-          <div className="link"></div>
+          <div>
+            <div className="title">Bi and Analytics</div>
+            <div className="text">
+              Use intuitive dashboards, reporting, and AI-generated insights to
+              see what’s going on in your business and make the next right move.
+            </div>
+          </div>
+          <div className="link">See BI and Analytics</div>
         </div>
         <div className="data-card">
-          <div className="title">data foundation</div>
-          <div className="text"></div>
-          <div className="link"></div>
+          <div>
+            <div className="title">Data Foundation</div>
+            <div className="text">
+              Build data experiences on a secure, flexible foundation that can
+              integrate real-time data from anywhere.
+            </div>
+          </div>
+          <div className="link">Explore Foundation</div>
         </div>
         <div className="data-card">
-          <div className="title">Domo.AI</div>
-          <div className="text"></div>
-          <div className="link"></div>
+          <div>
+            <div className="title">Domo.AI</div>
+            <div className="text">
+              From data prep to analysis to automation, stay connected with
+              AI-powered chat and guidance within your flow of work.
+            </div>
+          </div>
+          <div className="link">Explore Domo.AI</div>
         </div>
       </div>
       <div className="trusted-by">
         <div className="title">trusted by</div>
         <div className="logos">
-          <div className="logo"></div>
-          <div className="logo"></div>
-          <div className="logo"></div>
-          <div className="logo"></div>
-          <div className="logo"></div>
-          <div className="logo"></div>
+          <div className="logo">
+            <img src="" alt="unilever" />
+          </div>
+          <div className="logo">
+            <img src="" alt="BBVA" />
+          </div>
+          <div className="logo">
+            <img src="" alt="CAE" />
+          </div>
+          <div className="logo">
+            <img src="" alt="NBA" />
+          </div>
+          <div className="logo">
+            <img src="" alt="TaylorMade" />
+          </div>
+          <div className="logo">
+            <img src="" alt="Emerson" />
+          </div>
         </div>
       </div>
       <div className="xp-platform">

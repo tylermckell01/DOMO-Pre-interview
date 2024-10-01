@@ -6,7 +6,11 @@
   align-items: center;
   gap: 240px;
   margin: 10px 0;
-  // position: fixed;
+  // padding: 5px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
 
   .left-section {
     width: 40%;
@@ -80,11 +84,12 @@
       }
 
       :nth-child(2) {
-        background-color: orange;
-        border: solid 1px orange;
+        background-color: $button-orange;
+        border: solid 1px $button-orange;
+        // border: none;
 
         &:hover {
-          background-color: darkorange;
+          background-color: orange;
           color: black;
         }
       }
