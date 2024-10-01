@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
 import domoLogo from "../pictures/Domo-Logo.png";
 import heroPicture from "../pictures/product-feature-mulitply-your-impact-data-experiences-customers-2x.webp";
+import uniLever from "../pictures/unilever logo.webp";
+import BBVA from "../pictures/bbva logo.webp";
+import CAE from "../pictures/CAE logo.png";
+import NBA from "../pictures/nba logo.png";
+import taylorMade from "../pictures/TaylorMade logo.png";
+import emerson from "../pictures/emerson logo.png";
 
 const HomePage = () => {
+  // const [toggle, setToggle] = useState(false);
+  const [componentToggle, setComponentToggle] = useState("");
+
+  // const renderToggle = () => {
+  //   setToggle((prev) => !prev);
+  // };
+
+  const xpComponent = () => {
+    return <div>this is the {componentToggle} component</div>;
+  };
+
   return (
     <div className="home-page">
       <div className="sub-header">
@@ -72,44 +90,64 @@ const HomePage = () => {
         </div>
       </div>
       <div className="trusted-by">
-        <div className="title">trusted by</div>
+        <div className="title">TRUSTED BY</div>
         <div className="logos">
           <div className="logo">
-            <img src="" alt="unilever" />
+            <img src={uniLever} alt="unilever" />
           </div>
           <div className="logo">
-            <img src="" alt="BBVA" />
+            <img src={BBVA} alt="BBVA" />
           </div>
           <div className="logo">
-            <img src="" alt="CAE" />
+            <img src={CAE} alt="CAE" />
           </div>
           <div className="logo">
-            <img src="" alt="NBA" />
+            <img src={NBA} alt="NBA" />
           </div>
           <div className="logo">
-            <img src="" alt="TaylorMade" />
+            <img src={taylorMade} alt="TaylorMade" />
           </div>
           <div className="logo">
-            <img src="" alt="Emerson" />
+            <img src={emerson} alt="Emerson" />
           </div>
         </div>
       </div>
       <div className="xp-platform">
-        <div className="xp-section">
-          overview
-          <div className="overview">component</div>
-        </div>
-        <div className="xp-section">
-          App creation
-          <div className="app-creation">component</div>
-        </div>
-        <div className="xp-section">
-          BI and Analytics
-          <div className="bi-analytics">component</div>
-        </div>
-        <div className="xp-section">
-          Data Foundation
-          <div className="data-foundation">component</div>
+        <div className="title">Domo Data Experience Platform</div>
+        <div className="xp-sections">
+          <div
+            className="xp-section"
+            onClick={() => {
+              setComponentToggle("overview");
+            }}
+          >
+            <div className="section-title">Overview</div>
+          </div>
+          <div
+            className="xp-section"
+            onClick={() => {
+              setComponentToggle("App Creation");
+            }}
+          >
+            <div className="section-title">App Creation</div>
+          </div>
+          <div
+            className="xp-section"
+            onClick={() => {
+              setComponentToggle("BI and Analytics");
+            }}
+          >
+            <div className="section-title">BI and Analytics</div>
+          </div>
+          <div
+            className="xp-section"
+            onClick={() => {
+              setComponentToggle("Data Foundation");
+            }}
+          >
+            <div className="section-title">Data Foundation</div>
+          </div>
+          <div className="xp-component">{xpComponent()}</div>
         </div>
       </div>
       <div className="client-testimonal-card">
