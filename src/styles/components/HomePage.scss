@@ -195,9 +195,10 @@
     }
 
     .xp-sections {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(2, auto);
+      display: flex;
+      // display: grid;
+      // grid-template-columns: repeat(4, 1fr);
+      // grid-template-rows: repeat(2, auto);
       // justify-content: space-between;
       width: 60%;
 
@@ -208,15 +209,10 @@
           font-size: 20px;
           cursor: pointer;
         }
-        .overview {
-        }
-        .app-creation {
-        }
-        .bi-analytics {
-        }
+      }
 
-        .data-foundation {
-        }
+      .xp-component {
+        width: 100%;
       }
     }
   }

@@ -147,8 +147,8 @@ const HomePage = () => {
           >
             <div className="section-title">Data Foundation</div>
           </div>
-          <div className="xp-component">{xpComponent()}</div>
         </div>
+        <div className="xp-component second-row">{xpComponent()}</div>
       </div>
       <div className="client-testimonal-card">
         <div className="text">
