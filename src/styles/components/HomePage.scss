@@ -194,15 +194,27 @@
 
     .xp-sections {
       display: flex;
-
-      width: 60%;
+      justify-content: space-between;
+      color: blue;
+      width: 70%;
 
       .xp-section {
+        width: 25%;
+
         .section-title {
           padding: 30px 40px;
-          color: $font-gray;
+          text-align: center;
+          color: $light-font-gray;
           font-size: 20px;
+          font-weight: 500;
           cursor: pointer;
+
+          border-bottom: solid 1px;
+          border-bottom-color: $light-font-gray;
+
+          &:hover {
+            color: black;
+          }
         }
       }
 

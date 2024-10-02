@@ -13,6 +13,10 @@ import emerson from "../pictures/emerson logo.png";
 const HomePage = () => {
   const [componentToggle, setComponentToggle] = useState("");
 
+  const renderBlueLine = () => {
+    return { borderBottom: "solid -3px", borderBottomColor: "#99ccee" };
+  };
+
   const xpComponent = () => {
     return <div>this is the {componentToggle} component</div>;
   };
@@ -116,7 +120,12 @@ const HomePage = () => {
               setComponentToggle("overview");
             }}
           >
-            <div className="section-title">Overview</div>
+            <div
+              className="section-title"
+              style={componentToggle === "overview" ? renderBlueLine() : {}}
+            >
+              Overview
+            </div>
           </div>
           <div
             className="xp-section"
@@ -124,7 +133,12 @@ const HomePage = () => {
               setComponentToggle("App Creation");
             }}
           >
-            <div className="section-title">App Creation</div>
+            <div
+              className="section-title"
+              style={componentToggle === "App Creation" ? renderBlueLine() : {}}
+            >
+              App Creation
+            </div>
           </div>
           <div
             className="xp-section"
@@ -132,7 +146,14 @@ const HomePage = () => {
               setComponentToggle("BI and Analytics");
             }}
           >
-            <div className="section-title">BI and Analytics</div>
+            <div
+              className="section-title"
+              style={
+                componentToggle === "BI and Analytics" ? renderBlueLine() : {}
+              }
+            >
+              BI and Analytics
+            </div>
           </div>
           <div
             className="xp-section"
@@ -140,7 +161,14 @@ const HomePage = () => {
               setComponentToggle("Data Foundation");
             }}
           >
-            <div className="section-title">Data Foundation</div>
+            <div
+              className="section-title"
+              style={
+                componentToggle === "Data Foundation" ? renderBlueLine() : {}
+              }
+            >
+              Data Foundation
+            </div>
           </div>
         </div>
         <div className="xp-component second-row">{xpComponent()}</div>
