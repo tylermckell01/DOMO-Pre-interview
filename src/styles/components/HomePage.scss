@@ -1,5 +1,4 @@
 .home-page {
-  // margin-top: 80px;
   background: linear-gradient(to right, white, $light-domo-blue);
 
   a {
@@ -160,7 +159,6 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 80px;
-    // background-color: white;
 
     .title {
       color: $font-gray;
@@ -196,10 +194,7 @@
 
     .xp-sections {
       display: flex;
-      // display: grid;
-      // grid-template-columns: repeat(4, 1fr);
-      // grid-template-rows: repeat(2, auto);
-      // justify-content: space-between;
+
       width: 60%;
 
       .xp-section {

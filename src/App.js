@@ -19,7 +19,6 @@ import Pricing from "./components/Pricing";
 import Product from "./components/Product";
 import TryFree from "./components/TryFree";
 import SignIn from "./components/SignIn";
-// import "./styles/App.scss";
 import "./styles/Main.scss";
 
 import domoLogo from "../src/pictures/Domo-Logo.png";

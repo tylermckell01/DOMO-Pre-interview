@@ -11,12 +11,7 @@ import taylorMade from "../pictures/TaylorMade logo.png";
 import emerson from "../pictures/emerson logo.png";
 
 const HomePage = () => {
-  // const [toggle, setToggle] = useState(false);
   const [componentToggle, setComponentToggle] = useState("");
-
-  // const renderToggle = () => {
-  //   setToggle((prev) => !prev);
-  // };
 
   const xpComponent = () => {
     return <div>this is the {componentToggle} component</div>;

@@ -6,7 +6,6 @@
   align-items: center;
   gap: 240px;
   margin: 10px 0;
-  // padding: 5px 0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -40,7 +39,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
     gap: 10px;
 
     a {
@@ -87,7 +85,6 @@
       :nth-child(2) {
         background-color: $button-orange;
         border: solid 1px $button-orange;
-        // border: none;
 
         &:hover {
           background-color: orange;
