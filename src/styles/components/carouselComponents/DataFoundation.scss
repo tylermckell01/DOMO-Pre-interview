@@ -1,62 +1,81 @@
 .data-foundation-container {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  width: 100%;
-  height: 375px;
+  .top {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    height: 375px;
 
-  .left-section {
-    width: 35%;
+    .left-section {
+      width: 35%;
 
-    img {
-      width: 90%;
-      height: 100%;
+      img {
+        width: 90%;
+        height: 100%;
+      }
+    }
+
+    .right-section {
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .title {
+        font-size: 28px;
+        font-weight: 500;
+        color: black;
+        letter-spacing: 2px;
+      }
+
+      .text {
+        line-height: 20px;
+        letter-spacing: 1px;
+        color: $light-font-gray;
+        font-weight: 300;
+      }
+
+      .button-title {
+        font-size: 13px;
+        color: $light-font-gray;
+        letter-spacing: 1px;
+      }
+
+      .button-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+        gap: 20px;
+
+        .link {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: fit-content;
+          background-color: $light-domo-blue;
+          color: $dark-font-gray;
+          font-size: 14px;
+          padding: 5px 10px;
+          border-radius: 20px;
+        }
+      }
     }
   }
 
-  .right-section {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-    .title {
-      font-size: 28px;
-      font-weight: 500;
-      color: black;
-      letter-spacing: 2px;
-    }
-
+  .bottom {
     .text {
-      line-height: 20px;
-      letter-spacing: 1px;
-      color: $light-font-gray;
-      font-weight: 300;
-    }
-
-    .button-title {
-      font-size: 13px;
-      color: $light-font-gray;
-      letter-spacing: 1px;
-    }
-
-    .button-container {
-      display: grid;
-      grid-template-columns: auto auto;
-      width: 100%;
-      gap: 20px;
-
-      .link {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: fit-content;
-        background-color: $light-domo-blue;
-        color: $dark-font-gray;
-        font-size: 14px;
-        padding: 5px 10px;
-        border-radius: 20px;
+      .quote {
       }
+      .name {
+      }
+      .title {
+      }
+    }
+  }
+  div {
+    img {
+      width: 100px;
+      height: auto;
     }
   }
 }

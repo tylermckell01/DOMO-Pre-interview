@@ -188,14 +188,6 @@ const HomePage = () => {
         </div>
         <div className="xp-component second-row">{xpComponent()}</div>
       </div>
-      <div className="client-testimonal-card">
-        <div className="text">
-          <div className="quote"> "domo allows us....</div>
-          <div className="client"></div>
-          <div className="client-credentials"></div>
-        </div>
-        <div className="client-picture">picture</div>
-      </div>
       <div className="multipliers">
         <div className="title">Create a Company of Multipliers</div>
         <div className="text">Fresh data and provocative...</div>
