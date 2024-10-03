@@ -11,7 +11,7 @@ const DataFoundation = () => {
           Our secure data foundation provides the infrastructure, data
           integration, and governance that underpins your data experiences.
         </div>
-        <div className="button-title">Capabilities</div>
+        <div className="button-title">CAPABILITIES</div>
         <div className="button-container">
           <div className="link">Data Integration From Any Source</div>
           <div className="link">Data Governance</div>

@@ -12,7 +12,7 @@ const BiAndAnalytics = () => {
           Our intuitive custom data views and reporting capabilities enable
           better, faster decision-making for all kinds of users.
         </div>
-        <div className="button-title">Capabilities</div>
+        <div className="button-title">CAPABILITIES</div>
         <div className="button-container">
           <div className="link">Advanced Visualizations</div>
           <div className="link">AI and Data Science</div>
