@@ -1,3 +1,11 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHandPointUp,
+  faChartSimple,
+  faTableCellsRowLock,
+} from "@fortawesome/free-solid-svg-icons";
+import { faAppStoreIos } from "@fortawesome/free-brands-svg-icons";
+
 import stack1 from "../../pictures/xp-components/product-feature-platform-architecture-2023-data-experience-platform-2x.webp";
 
 const Overview = () => {
@@ -14,10 +22,30 @@ const Overview = () => {
         </div>
         <div className="button-title">PLATFORM OUTPUTS</div>
         <div className="button-container">
-          <div className="link">icon Business Apps</div>
-          <div className="link">icon Self-serve Reporting</div>
-          <div className="link">icon Interactive Dashboards</div>
-          <div className="link">icon Imbedded Analytics</div>
+          <div className="link">
+            <div>
+              <FontAwesomeIcon icon={faAppStoreIos} className="icon" />
+            </div>
+            <div>Business Apps</div>
+          </div>
+          <div className="link">
+            <div>
+              <FontAwesomeIcon icon={faHandPointUp} className="icon" />
+            </div>
+            <div>Self-serve Reporting</div>
+          </div>
+          <div className="link">
+            <div>
+              <FontAwesomeIcon icon={faChartSimple} className="icon" />
+            </div>
+            <div>Interactive Dashboards</div>
+          </div>
+          <div className="link">
+            <div>
+              <FontAwesomeIcon icon={faTableCellsRowLock} className="icon" />
+            </div>
+            <div>Imbedded Analytics</div>
+          </div>
         </div>
       </div>
     </div>

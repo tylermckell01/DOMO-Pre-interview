@@ -195,7 +195,6 @@
     .xp-sections {
       display: flex;
       justify-content: space-between;
-      color: blue;
       width: 70%;
 
       .xp-section {
@@ -208,19 +207,14 @@
           font-size: 20px;
           font-weight: 500;
           cursor: pointer;
-
           border-bottom: solid 1px;
-          border-bottom-color: $light-font-gray;
+          border-bottom-color: rgb(85, 85, 85, 0.3);
 
           &:hover {
             color: black;
           }
         }
       }
-
-      // .xp-component {
-      //   width: 80%;
-      // }
     }
   }
 }

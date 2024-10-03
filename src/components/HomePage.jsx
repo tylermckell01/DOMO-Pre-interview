@@ -16,10 +16,14 @@ import BiAndAnalytics from "./carouselComponents/BiAndAnalytics";
 import DataFoundation from "./carouselComponents/DataFoundation";
 
 const HomePage = () => {
-  const [componentToggle, setComponentToggle] = useState("");
+  const [componentToggle, setComponentToggle] = useState("overview");
 
   const renderBlueLine = () => {
-    return { borderBottom: "solid 3px", borderBottomColor: "#99ccee" };
+    return {
+      color: "black",
+      borderBottom: "solid 3px",
+      borderBottomColor: "#99ccee",
+    };
   };
 
   const xpComponent = () => {

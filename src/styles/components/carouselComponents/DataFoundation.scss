@@ -1,4 +1,4 @@
-.overview-container {
+.data-foundation-container {
   display: flex;
   align-self: center;
   justify-content: center;
@@ -45,16 +45,14 @@
       gap: 20px;
 
       .link {
-        width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: fit-content;
         background-color: $light-domo-blue;
         color: $dark-font-gray;
         padding: 10px;
-        border-radius: 10px;
-
-        .icon {
-          width: 30px;
-          height: 25px;
-        }
+        border-radius: 5px;
       }
     }
   }
