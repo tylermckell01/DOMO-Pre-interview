@@ -24,29 +24,13 @@ const HomePage = () => {
 
   const xpComponent = () => {
     if (componentToggle === "overview") {
-      return (
-        <div>
-          <Overview />
-        </div>
-      );
+      return <Overview />;
     } else if (componentToggle === "app-creation") {
-      return (
-        <div>
-          <AppCreation />
-        </div>
-      );
+      return <AppCreation />;
     } else if (componentToggle === "bi-analytics") {
-      return (
-        <div>
-          <BiAndAnalytics />
-        </div>
-      );
+      return <BiAndAnalytics />;
     } else if (componentToggle === "data-foundation") {
-      return (
-        <div>
-          <DataFoundation />
-        </div>
-      );
+      return <DataFoundation />;
     }
   };
 

@@ -1,0 +1,39 @@
+.overview-container {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+
+  .left-section {
+    width: 35%;
+
+    img {
+      width: 80%;
+      height: 80%;
+    }
+  }
+
+  .right-section {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    .title {
+    }
+
+    .text {
+    }
+
+    .button-title {
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: 200px 200px;
+      gap: 20px;
+    }
+
+    .link {
+      background-color: $light-domo-blue;
+    }
+  }
+}
