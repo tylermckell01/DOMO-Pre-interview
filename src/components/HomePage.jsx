@@ -10,15 +10,44 @@ import NBA from "../pictures/nba logo.png";
 import taylorMade from "../pictures/TaylorMade logo.png";
 import emerson from "../pictures/emerson logo.png";
 
+import Overview from "./carouselComponents/Overview";
+import AppCreation from "./carouselComponents/AppCreation";
+import BiAndAnalytics from "./carouselComponents/BiAndAnalytics";
+import DataFoundation from "./carouselComponents/DataFoundation";
+
 const HomePage = () => {
   const [componentToggle, setComponentToggle] = useState("");
 
   const renderBlueLine = () => {
-    return { borderBottom: "solid -3px", borderBottomColor: "#99ccee" };
+    return { borderBottom: "solid 3px", borderBottomColor: "#99ccee" };
   };
 
   const xpComponent = () => {
-    return <div>this is the {componentToggle} component</div>;
+    if (componentToggle === "overview") {
+      return (
+        <div>
+          <Overview />
+        </div>
+      );
+    } else if (componentToggle === "app-creation") {
+      return (
+        <div>
+          <AppCreation />
+        </div>
+      );
+    } else if (componentToggle === "bi-analytics") {
+      return (
+        <div>
+          <BiAndAnalytics />
+        </div>
+      );
+    } else if (componentToggle === "data-foundation") {
+      return (
+        <div>
+          <DataFoundation />
+        </div>
+      );
+    }
   };
 
   return (
@@ -130,12 +159,12 @@ const HomePage = () => {
           <div
             className="xp-section"
             onClick={() => {
-              setComponentToggle("App Creation");
+              setComponentToggle("app-creation");
             }}
           >
             <div
               className="section-title"
-              style={componentToggle === "App Creation" ? renderBlueLine() : {}}
+              style={componentToggle === "app-creation" ? renderBlueLine() : {}}
             >
               App Creation
             </div>
@@ -143,14 +172,12 @@ const HomePage = () => {
           <div
             className="xp-section"
             onClick={() => {
-              setComponentToggle("BI and Analytics");
+              setComponentToggle("bi-analytics");
             }}
           >
             <div
               className="section-title"
-              style={
-                componentToggle === "BI and Analytics" ? renderBlueLine() : {}
-              }
+              style={componentToggle === "bi-analytics" ? renderBlueLine() : {}}
             >
               BI and Analytics
             </div>
@@ -158,13 +185,13 @@ const HomePage = () => {
           <div
             className="xp-section"
             onClick={() => {
-              setComponentToggle("Data Foundation");
+              setComponentToggle("data-foundation");
             }}
           >
             <div
               className="section-title"
               style={
-                componentToggle === "Data Foundation" ? renderBlueLine() : {}
+                componentToggle === "data-foundation" ? renderBlueLine() : {}
               }
             >
               Data Foundation
