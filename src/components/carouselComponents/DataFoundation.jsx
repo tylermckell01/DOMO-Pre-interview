@@ -33,12 +33,14 @@ const DataFoundation = () => {
             with it what they want because they don't have to write code against
             it.”
           </div>
-          <div className="name">Bruce Harris</div>
-          <div className="title">
-            Director of Finance Applications, Torchy's Tacos
+          <div>
+            <div className="name">Bruce Harris</div>
+            <div className="title">
+              Director of Finance Applications, Torchy's Tacos
+            </div>
           </div>
         </div>
-        <div>
+        <div className="image">
           <img src={advocate} alt="" />
         </div>
       </div>

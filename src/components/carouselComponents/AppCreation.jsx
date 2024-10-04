@@ -32,13 +32,15 @@ const AppCreation = () => {
             problems, explore new ideas, make better decisions, and learn what
             works best for our staff and the patients and families we serve.”
           </div>
-          <div className="name">Niranjani Radhakrishnan</div>
-          <div className="title">
-            Director of the Center for Information and Analytics, Regional One
-            Health
+          <div>
+            <div className="name">Niranjani Radhakrishnan</div>
+            <div className="title">
+              Director of the Center for Information and Analytics, Regional One
+              Health
+            </div>
           </div>
         </div>
-        <div>
+        <div className="image">
           <img src={advocate} alt="" />
         </div>
       </div>

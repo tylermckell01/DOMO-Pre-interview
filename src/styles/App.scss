@@ -6,6 +6,7 @@
   align-items: center;
   gap: 240px;
   margin: 10px 0;
+  padding-bottom: 3px;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -27,6 +28,12 @@
     a {
       color: $dark-font-gray;
       text-decoration: none;
+      border-bottom: solid 3px transparent;
+
+      &:hover {
+        border-bottom: solid 3px;
+        border-bottom-color: $domo-blue;
+      }
     }
 
     img {

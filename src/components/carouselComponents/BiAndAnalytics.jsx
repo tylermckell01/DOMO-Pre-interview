@@ -33,10 +33,12 @@ const BiAndAnalytics = () => {
             data. Finding new ways to understand the data and then visualizing
             the data so that we can add value across the organization."
           </div>
-          <div className="name">Dominic Blosil</div>
-          <div className="title">CFO, Traeger</div>
+          <div>
+            <div className="name">Dominic Blosil</div>
+            <div className="title">CFO, Traeger</div>
+          </div>
         </div>
-        <div>
+        <div className="image">
           <img src={advocate} alt="" />
         </div>
       </div>

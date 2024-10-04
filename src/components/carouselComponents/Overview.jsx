@@ -59,12 +59,14 @@ const Overview = () => {
             unheard of for us. The opportunity to iterate and make quick
             decisions is very powerful.”
           </div>
-          <div className="name">Amber McMillan</div>
-          <div className="title">
-            Senior Vice President of Fitness and Weight Loss
+          <div>
+            <div className="name">Amber McMillan</div>
+            <div className="title">
+              Senior Vice President of Fitness and Weight Loss
+            </div>
           </div>
         </div>
-        <div>
+        <div className="image">
           <img src={advocate} alt="" />
         </div>
       </div>
