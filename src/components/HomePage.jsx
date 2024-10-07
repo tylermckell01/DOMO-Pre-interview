@@ -21,8 +21,8 @@ import Daltile from "./testimonialsComponents/Daltile";
 
 const HomePage = () => {
   const [xpComponentToggle, setXpComponentToggle] = useState("overview");
-  const [testimonialsComponentToggle, setTestimonialsComponentToggle] =
-    useState(["unilever", "taylormade", "daltile"]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const testimonials = [<Unilever />, <Taylormade />, <Daltile />];
 
   const renderBlueLine = () => {
     return {
@@ -45,13 +45,17 @@ const HomePage = () => {
   };
 
   const testimonialComponent = () => {
-    if (testimonialsComponentToggle === "unilever") {
-      return <Unilever />;
-    } else if (testimonialsComponentToggle === "taylormade") {
-      return <Taylormade />;
-    } else if (testimonialsComponentToggle === "daltile") {
-      return <Daltile />;
-    }
+    return testimonials[currentIndex];
+  };
+
+  const handleBackClick = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length
+    );
+  };
+
+  const handleForwardClick = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
   };
 
   return (
@@ -243,12 +247,12 @@ const HomePage = () => {
       </div>
       <div className="testimonials-component">
         <div className="testimonial">{testimonialComponent()}</div>
-        <div
-          className="testimonial-selector"
-          onClick={setTestimonialsComponentToggle()}
-        >
-          selector component
-        </div>
+        <button className="testimonial-selector" onClick={handleBackClick}>
+          {"<"}
+        </button>
+        <button className="testimonial-selector" onClick={handleForwardClick}>
+          {">"}
+        </button>
       </div>
       <div className="roi">
         <div className="title">ROI that turns into leads</div>
