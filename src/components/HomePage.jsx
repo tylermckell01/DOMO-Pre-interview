@@ -9,14 +9,20 @@ import CAE from "../pictures/CAE logo.png";
 import NBA from "../pictures/nba logo.png";
 import taylorMade from "../pictures/TaylorMade logo.png";
 import emerson from "../pictures/emerson logo.png";
+import bubbles from "../pictures/product-feature-mulitply-impact-avatar-icons-platform-2x.webp";
 
 import Overview from "./carouselComponents/Overview";
 import AppCreation from "./carouselComponents/AppCreation";
 import BiAndAnalytics from "./carouselComponents/BiAndAnalytics";
 import DataFoundation from "./carouselComponents/DataFoundation";
+import Unilever from "./testimonialsComponents/Unilever";
+import Taylormade from "./testimonialsComponents/Taylormade";
+import Daltile from "./testimonialsComponents/Daltile";
 
 const HomePage = () => {
-  const [componentToggle, setComponentToggle] = useState("overview");
+  const [xpComponentToggle, setXpComponentToggle] = useState("overview");
+  const [testimonialsComponentToggle, setTestimonialsComponentToggle] =
+    useState(["unilever", "taylormade", "daltile"]);
 
   const renderBlueLine = () => {
     return {
@@ -27,14 +33,24 @@ const HomePage = () => {
   };
 
   const xpComponent = () => {
-    if (componentToggle === "overview") {
+    if (xpComponentToggle === "overview") {
       return <Overview />;
-    } else if (componentToggle === "app-creation") {
+    } else if (xpComponentToggle === "app-creation") {
       return <AppCreation />;
-    } else if (componentToggle === "bi-analytics") {
+    } else if (xpComponentToggle === "bi-analytics") {
       return <BiAndAnalytics />;
-    } else if (componentToggle === "data-foundation") {
+    } else if (xpComponentToggle === "data-foundation") {
       return <DataFoundation />;
+    }
+  };
+
+  const testimonialComponent = () => {
+    if (testimonialsComponentToggle === "unilever") {
+      return <Unilever />;
+    } else if (testimonialsComponentToggle === "taylormade") {
+      return <Taylormade />;
+    } else if (testimonialsComponentToggle === "daltile") {
+      return <Daltile />;
     }
   };
 
@@ -134,12 +150,12 @@ const HomePage = () => {
           <div
             className="xp-section"
             onClick={() => {
-              setComponentToggle("overview");
+              setXpComponentToggle("overview");
             }}
           >
             <div
               className="section-title"
-              style={componentToggle === "overview" ? renderBlueLine() : {}}
+              style={xpComponentToggle === "overview" ? renderBlueLine() : {}}
             >
               Overview
             </div>
@@ -147,12 +163,14 @@ const HomePage = () => {
           <div
             className="xp-section"
             onClick={() => {
-              setComponentToggle("app-creation");
+              setXpComponentToggle("app-creation");
             }}
           >
             <div
               className="section-title"
-              style={componentToggle === "app-creation" ? renderBlueLine() : {}}
+              style={
+                xpComponentToggle === "app-creation" ? renderBlueLine() : {}
+              }
             >
               App Creation
             </div>
@@ -160,12 +178,14 @@ const HomePage = () => {
           <div
             className="xp-section"
             onClick={() => {
-              setComponentToggle("bi-analytics");
+              setXpComponentToggle("bi-analytics");
             }}
           >
             <div
               className="section-title"
-              style={componentToggle === "bi-analytics" ? renderBlueLine() : {}}
+              style={
+                xpComponentToggle === "bi-analytics" ? renderBlueLine() : {}
+              }
             >
               BI and Analytics
             </div>
@@ -173,13 +193,13 @@ const HomePage = () => {
           <div
             className="xp-section"
             onClick={() => {
-              setComponentToggle("data-foundation");
+              setXpComponentToggle("data-foundation");
             }}
           >
             <div
               className="section-title"
               style={
-                componentToggle === "data-foundation" ? renderBlueLine() : {}
+                xpComponentToggle === "data-foundation" ? renderBlueLine() : {}
               }
             >
               Data Foundation
@@ -189,34 +209,46 @@ const HomePage = () => {
         <div className="xp-component second-row">{xpComponent()}</div>
       </div>
       <div className="multipliers">
-        <div className="title">Create a Company of Multipliers</div>
-        <div className="text">Fresh data and provocative...</div>
+        <div className="title">Create a company of multipliers</div>
+        <div className="text">
+          Fresh data and provocative insights are not just good for a select
+          few. We believe everybody in your organization can use data
+          experiences to multiply their impact on the business.
+        </div>
       </div>
       <div className="empower">
         <div className="wording">
           <div>
             <div className="title">Empower All your Teams</div>
-            <div className="text">Our unique user-centric...</div>
+            <div className="text">
+              Our unique user-centric approach makes the platform easy for
+              anyone to use while still offering advanced capabilities that
+              enable technical teams to respond quickly to business needs.
+            </div>
           </div>
           <div>
-            <div className="title">let data drive your business</div>
-            <div className="text">domo helps you foster...</div>
-            <div className="link">Explore DOMO for yourself</div>
+            <div className="title">Let data drive your business.</div>
+            <div className="text">
+              Domo helps you foster a data-driven culture of curiosity that
+              inspires bold questions and smart, fast, transformative action.
+            </div>
+            <div className="link">
+              <Link>EXPLORE DOMO FOR YOUR ROLE</Link>
+            </div>
           </div>
         </div>
-        <div className="picture"></div>
+        <div className="picture">
+          <img src={bubbles} alt="" />
+        </div>
       </div>
-      <div className="testimonials">
-        <div className="testimonial">
-          <div className="title">Unilever</div>
-          <div className="quote">We've seen the game-changing impact....</div>
-          <div className="head-shot">
-            <img src="" alt="head shot" />
-          </div>
-          <div className="name">Alessandro Ventura</div>
-          <div className="title">Chief Information Officaer, Unilever</div>
+      <div className="testimonials-component">
+        <div className="testimonial">{testimonialComponent()}</div>
+        <div
+          className="testimonial-selector"
+          onClick={setTestimonialsComponentToggle()}
+        >
+          selector component
         </div>
-        <div className="testimonial-selector">selector component</div>
       </div>
       <div className="roi">
         <div className="title">ROI that turns into leads</div>
