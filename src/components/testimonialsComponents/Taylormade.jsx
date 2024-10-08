@@ -9,7 +9,7 @@ const Taylormade = () => {
       </div>
       <div className="quote">
         "We use Domo through the entire organization, from the people that build
-        the work in the warehouse all the way up to our executives.""
+        the work in the warehouse all the way up to our executives."
       </div>
       <div className="head-shot">
         <img src={headShot} alt="head shot" />

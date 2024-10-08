@@ -251,6 +251,24 @@ const HomePage = () => {
           <button className="testimonial-selector" onClick={handleBackClick}>
             {"<"}
           </button>
+          <div
+            className="circle"
+            style={
+              currentIndex === 0 ? { backgroundColor: "rgb(85, 85, 85)" } : {}
+            }
+          ></div>
+          <div
+            className="circle"
+            style={
+              currentIndex === 1 ? { backgroundColor: "rgb(85, 85, 85)" } : {}
+            }
+          ></div>
+          <div
+            className="circle"
+            style={
+              currentIndex === 2 ? { backgroundColor: "rgb(85, 85, 85)" } : {}
+            }
+          ></div>
           <button className="testimonial-selector" onClick={handleForwardClick}>
             {">"}
           </button>

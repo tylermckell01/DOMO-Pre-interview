@@ -15,7 +15,7 @@ const Unilever = () => {
         <img src={headShot} alt="head shot" />
       </div>
       <div className="name">Alessandro Ventura</div>
-      <div className="title">Chief Information Officaer, Unilever</div>
+      <div className="title">Chief Information Officer, Unilever</div>
     </div>
   );
 };
