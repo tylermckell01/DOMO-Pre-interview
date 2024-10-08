@@ -32,6 +32,16 @@ const HomePage = () => {
     };
   };
 
+  const renderCircleStyles = () => {
+    return {
+      backgroundColor: "rgb(85, 85, 85)",
+      transition: "background-color 0.5s ease",
+      padding: "6px 6px",
+      borderRadius: "6px",
+      boxShadow: "0px 1px 5px -1px rgb(0, 0, 0, 0.5)",
+    };
+  };
+
   const xpComponent = () => {
     if (xpComponentToggle === "overview") {
       return <Overview />;
@@ -253,21 +263,15 @@ const HomePage = () => {
           </button>
           <div
             className="circle"
-            style={
-              currentIndex === 0 ? { backgroundColor: "rgb(85, 85, 85)" } : {}
-            }
+            style={currentIndex === 0 ? renderCircleStyles() : {}}
           ></div>
           <div
             className="circle"
-            style={
-              currentIndex === 1 ? { backgroundColor: "rgb(85, 85, 85)" } : {}
-            }
+            style={currentIndex === 1 ? renderCircleStyles() : {}}
           ></div>
           <div
             className="circle"
-            style={
-              currentIndex === 2 ? { backgroundColor: "rgb(85, 85, 85)" } : {}
-            }
+            style={currentIndex === 2 ? renderCircleStyles() : {}}
           ></div>
           <button className="testimonial-selector" onClick={handleForwardClick}>
             {">"}
