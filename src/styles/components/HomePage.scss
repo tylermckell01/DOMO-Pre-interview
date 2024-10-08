@@ -401,7 +401,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 30px 0;
+    margin: 40px 0;
     gap: 30px;
 
     .title {
@@ -478,6 +478,49 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .why-love-domo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 1025px;
+    height: 185px;
+    padding: 25px 0;
+    background-color: $domo-blue;
+    border-radius: 5px;
+
+    .title {
+      font-size: 24px;
+      color: $font-gray;
+    }
+
+    .leader-container {
+      display: flex;
+
+      img {
+        width: 100px;
+        height: 125px;
+      }
+    }
+  }
+
+  .accolade {
+    margin-top: 50px;
+    margin-bottom: 80px;
+
+    a {
+      border: solid 1px $dark-domo-blue;
+      font-size: 14px;
+      border-radius: 5px;
+      padding: 11px 23px;
+      color: $dark-domo-blue;
+
+      &:hover {
+        background-color: $faded-light-blue;
       }
     }
   }

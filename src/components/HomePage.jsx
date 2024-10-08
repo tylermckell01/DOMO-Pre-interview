@@ -15,6 +15,13 @@ import gartner from "../pictures/recognition-cards/gartner.png";
 import dresner from "../pictures/recognition-cards/dresner.png";
 import gartnerPeer from "../pictures/recognition-cards/gartner-peer.png";
 import nucleus from "../pictures/recognition-cards/nucleus.png";
+import loveDomo1 from "../pictures/why-domo/why-love-domo1.webp";
+import loveDomo2 from "../pictures/why-domo/why-love-domo2.webp";
+import loveDomo3 from "../pictures/why-domo/why-love-domo3.webp";
+import loveDomo4 from "../pictures/why-domo/why-love-domo4.webp";
+import loveDomo5 from "../pictures/why-domo/why-love-domo5.webp";
+import loveDomo6 from "../pictures/why-domo/why-love-domo6.webp";
+// import loveDomo7 from "../pictures/why-domo/why-love-domo7.webp";
 
 import Overview from "./carouselComponents/Overview";
 import AppCreation from "./carouselComponents/AppCreation";
@@ -390,12 +397,18 @@ const HomePage = () => {
         </div>
       </div>
       <div className="why-love-domo">
-        <div>
-          background image
-          <div className="title"></div>
-          <div className="picture"></div>
+        <div className="title">Why customers love Domo.</div>
+        <div className="leader-container">
+          <img src={loveDomo1} alt="" />
+          <img src={loveDomo2} alt="" />
+          <img src={loveDomo3} alt="" />
+          <img src={loveDomo4} alt="" />
+          <img src={loveDomo5} alt="" />
+          <img src={loveDomo6} alt="" />
         </div>
-        <div className="link">view all accolades</div>
+      </div>
+      <div className="accolade">
+        <Link>VIEW ALL ACCOLADES</Link>
       </div>
       <div className="explore">
         <div className="explore-card">
