@@ -10,6 +10,11 @@ import NBA from "../pictures/nba logo.png";
 import taylorMade from "../pictures/TaylorMade logo.png";
 import emerson from "../pictures/emerson logo.png";
 import bubbles from "../pictures/product-feature-mulitply-impact-avatar-icons-platform-2x.webp";
+import forrester from "../pictures/forrester.png";
+import gartner from "../pictures/recognition-cards/gartner.png";
+import dresner from "../pictures/recognition-cards/dresner.png";
+import gartnerPeer from "../pictures/recognition-cards/gartner-peer.png";
+import nucleus from "../pictures/recognition-cards/nucleus.png";
 
 import Overview from "./carouselComponents/Overview";
 import AppCreation from "./carouselComponents/AppCreation";
@@ -280,14 +285,16 @@ const HomePage = () => {
       </div>
       <div className="roi">
         <div className="title">ROI that turns into leads</div>
-        <div className="text">Analysts agree that ....</div>
-        <div className="text-reference">
-          According to
-          <h2>Forrester</h2>
+        <div className="text">
+          Analysts agree that Domo's solutions for BI and apps provide value in
+          record time.
         </div>
+        <div className="text-reference">ACCORDING TO</div>
+        <img src={forrester} alt="" />
         <div className="roi-for">
           <div className="roi-section">
-            <div className="title">ROI for small and medium businesses</div>
+            <div className="line"></div>
+            <div className="title">ROI for Small and Medium Businesses</div>
             <div className="info-cards">
               <div className="card">
                 <div className="title">345%</div>
@@ -295,20 +302,21 @@ const HomePage = () => {
               </div>
               <div className="card">
                 <div className="title">Over $1M</div>
-                <div className="text">In Increased Revenue</div>
+                <div className="text">in increased revenue</div>
               </div>
               <div className="card">
                 <div className="title"> {"<6 month"}</div>
-                <div className="text">Payback Period</div>
+                <div className="text">payback period</div>
               </div>
             </div>
-            <div className="link">Read the Report</div>
+            <div className="link">READ THE REPORT</div>
           </div>
           <div className="roi-section">
-            <div className="title">ROI for apps</div>
+            <div className="line"></div>
+            <div className="title">ROI for Apps</div>
             <div className="info-cards">
               <div className="card">
-                <div className="title">455%%</div>
+                <div className="title">455%</div>
                 <div className="text">ROI over 3 years</div>
               </div>
               <div className="card">
@@ -320,7 +328,8 @@ const HomePage = () => {
                 <div className="text">net present value</div>
               </div>
             </div>
-            <div className="link">Read the Report</div>
+            <div className="link">READ THE REPORT</div>
+            <div className="line"></div>
           </div>
           <div className="reference">
             Forrester Study: The Total Economic Impact™ of Domo For Small and
@@ -330,12 +339,54 @@ const HomePage = () => {
         </div>
       </div>
       <div className="recognized">
-        <div className="title"></div>
+        <div className="title">
+          Recognized by the industry's top analysts and thought leaders.
+        </div>
         <div className="recognition-cards">
-          <div className="recognition-card"></div>
-          <div className="recognition-card"></div>
-          <div className="recognition-card"></div>
-          <div className="recognition-card"></div>
+          <Link>
+            <div className="recognition-card">
+              <img src={gartner} alt="" className="gartner" />
+              <div className="title">Gartner® Magic Quadrant™</div>
+              <div className="text">
+                Domo Named a Challenger in 2024 Gartner® Magic Quadrant™ for
+                Analytics and BI Platforms
+              </div>
+              <div className="link">Read the Gartner Report</div>
+            </div>
+          </Link>
+          <Link>
+            <div className="recognition-card">
+              <img src={dresner} alt="" className="dresner" />
+              <div className="title">Dresner Adivsory Services</div>
+              <div className="text">
+                Domo Ranked #1 Vendor in Dresner Advisory Services' 2023
+                Self-Service Business Intelligence Market Study
+              </div>
+              <div className="link">Read the Dresner Report</div>
+            </div>
+          </Link>
+          <Link>
+            <div className="recognition-card">
+              <img src={gartnerPeer} alt="" className="gartner-peer" />
+              <div className="title">Gartner® Peer Insights™</div>
+              <div className="text">
+                Domo Recognized as a Customer's Choice in Gartner® Peer
+                Insights™ Voice of the Customer
+              </div>
+              <div className="link">Read the Peer Insights Report</div>
+            </div>
+          </Link>
+          <Link>
+            <div className="recognition-card">
+              <img src={nucleus} alt="" className="nucleus" />
+              <div className="title">Nucleus Research Report</div>
+              <div className="text">
+                Domo Recognized as a Leader in the 2023 Nucleus Research Report
+                on Embedded Analytics
+              </div>
+              <div className="link">Read the Nucleus Report</div>
+            </div>
+          </Link>
         </div>
       </div>
       <div className="why-love-domo">

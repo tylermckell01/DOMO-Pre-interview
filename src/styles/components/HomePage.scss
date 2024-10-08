@@ -306,4 +306,179 @@
       }
     }
   }
+
+  .roi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222222;
+    color: white;
+    margin-top: 50px;
+    gap: 30px;
+    letter-spacing: 1px;
+    padding: 80px 0;
+
+    .title {
+      font-size: 36px;
+      font-weight: 100;
+    }
+    .text {
+      font-weight: 100;
+    }
+
+    .text-reference {
+      font-size: 12px;
+    }
+    img {
+      width: 151px;
+      height: 24px;
+    }
+
+    .roi-for {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .roi-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 30px;
+
+        .title {
+          font-size: 20px;
+        }
+        .info-cards {
+          display: flex;
+          gap: 20px;
+
+          .card {
+            width: 335px;
+            height: 95px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // gap: 10px;
+            background-color: rgb(1, 1, 1, 0.5);
+            border-radius: 10px;
+
+            .title {
+              font-size: 28px;
+              color: $domo-blue;
+              margin-top: 0;
+            }
+            .text {
+              font-weight: 300;
+            }
+          }
+        }
+        .link {
+          font-size: 12px;
+          color: $domo-blue;
+        }
+      }
+      .reference {
+        font-size: 12px;
+        font-weight: 300;
+        padding: 0 390px;
+        text-align: center;
+        line-height: 20px;
+      }
+    }
+
+    .line {
+      width: 100%;
+      padding: 1px;
+      background-color: $light-font-gray;
+    }
+  }
+
+  .recognized {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+    gap: 30px;
+
+    .title {
+      width: 60%;
+      font-size: 36px;
+      font-weight: 100;
+    }
+
+    .recognition-cards {
+      // width: 75%;
+      display: flex;
+      gap: 15px;
+
+      a {
+        .recognition-card {
+          width: 245px;
+          height: 325px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          background-color: white;
+          border-radius: 5px;
+          cursor: pointer;
+
+          img {
+            height: 50px;
+          }
+
+          .gartner {
+            width: 150px;
+          }
+
+          .dresner {
+            width: 75px;
+          }
+
+          .gartner-peer {
+            width: 75px;
+          }
+
+          .nucleus {
+            width: 75px;
+          }
+
+          .title {
+            width: 70%;
+            font-size: 20px;
+            font-weight: 500;
+            color: black;
+          }
+
+          .text {
+            color: $light-font-gray;
+            letter-spacing: 1px;
+            line-height: 20px;
+            font-weight: 100;
+            font-size: 14px;
+            padding: 0 9px;
+          }
+
+          .link {
+            font-size: 13px;
+            color: $dark-domo-blue;
+            letter-spacing: 1px;
+            padding: 10px;
+            border-radius: 5px;
+          }
+
+          &:hover {
+            .link {
+              background-color: $light-domo-blue;
+              // padding: 5px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
