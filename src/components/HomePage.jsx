@@ -245,14 +245,16 @@ const HomePage = () => {
           <img src={bubbles} alt="" />
         </div>
       </div>
-      <div className="testimonials-component">
+      <div className="testimonials-container">
         <div className="testimonial">{testimonialComponent()}</div>
-        <button className="testimonial-selector" onClick={handleBackClick}>
-          {"<"}
-        </button>
-        <button className="testimonial-selector" onClick={handleForwardClick}>
-          {">"}
-        </button>
+        <div className="selector-wrapper">
+          <button className="testimonial-selector" onClick={handleBackClick}>
+            {"<"}
+          </button>
+          <button className="testimonial-selector" onClick={handleForwardClick}>
+            {">"}
+          </button>
+        </div>
       </div>
       <div className="roi">
         <div className="title">ROI that turns into leads</div>
